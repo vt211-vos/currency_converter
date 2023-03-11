@@ -8,10 +8,6 @@ import {useRecoilValue} from "recoil";
 import {$rates} from "../../data";
 
 
-interface IRates {
-    [key: string]: number;
-}
-
 export function Header() {
     const rates = useRecoilValue($rates)
     return (

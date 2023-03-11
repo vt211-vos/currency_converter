@@ -1,10 +1,12 @@
 import {atom} from "recoil";
+
 interface IRates {
     [key: string]: number;
 }
 
 export const $rates = atom<IRates>({
-    key: "rates"
+    key: "rates",
+    default: undefined
 })
 
 export const $fromCurrency = atom<number | undefined>({
@@ -26,3 +28,4 @@ export const $selectToCurrency = atom<string>({
     key: "selectToCurrency",
     default: "UAH"
 })
+
